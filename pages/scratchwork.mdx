@@ -1,0 +1,115 @@
+# Welcome to Nextra
+
+* Introduction
+  * Discuss the main topics and what to expect
+* Starting example
+  * Describe purpose of Mathlingua
+    * Guiding principles
+    * How it differs from latex and dependent type systems
+    * The tradeoffs and how they are decided to address the language's purpose
+      * Focus on writing results easily and catching major errors
+  * General syntax
+    * Structural indentation based
+    * Formulation command based
+    * Static and dynamic elements
+    * Distinction of meaning from visual and audible representation
+  * Describe different parts of Mathlingua and how they interact
+    * Structural vs formulation language
+    * Different types of entities
+    * Different sigils
+* mlg
+  * describe the purpose of the command line tool
+  * render
+  * check
+* Rendering
+  * Describe how `called:` and `written:` is used
+  * Describe purpose of separating description with rendering
+  * Pretty printing
+    * Describe how alpha, beta, etc. are automatically rendered as greek letters
+* Introduction to the two parts of the language
+* Formulation language
+  * Guiding principles
+* Forms and expression versions of forms
+  * Identifiers
+    * Describe that underscores can be used
+    * Describe stropping is done with ""
+    * Describe that backtick is used for quote
+  * Tuples
+    * Describe that `(x)` and `x` are equivalent and `f((x,y,z))` and `f(x, y, z)` are equivalent
+  * Fixed sets
+  * Conditional sets
+    * Describe variadic args
+  * Mappings
+    * Describe how `f(x)` means the structure in structural view and value otherwise
+    * Describe variadic args
+  * Describe how ordinal calls can be used `x{i}` and `f(x){i}`.
+  * Details
+    * Forms can be nested
+    * Forms describe structure
+* Commands
+  * Examples
+  * Usage
+  * Directed `@[]`
+  * Variadic
+  * Signatures
+    * Uses the number of form of args but not the types of args (only looking at the first level of depth)
+    * Allows for overloading in directions but whenever any part of the command is variadic, the whole this is treated as variadic and there can only be one variadic form
+  * Describe how `[]{}` and `[]{:}` is sugar for mapping and conditional set inputs
+* `:=`
+* `=`
+  * Describe that it is built-in but has no meaning
+* `:=>`
+  * Describe it is used for aliases that match the type of the input
+* Operators
+  * Order of operations
+  * General prefix, postfix, infix
+  * Enclosed
+  * `:` for resolution
+* Built in types
+  * `:statement:`, `:spec:`, `:expression:`
+* Structural language
+  * Guiding principles
+    * Structural language is fixed and formulation language is fluid
+    * where vs suchThat
+    * Flow based typing
+ * Common aspects
+   * `[ids]`
+     * MetaIds
+     * Documented
+     * References
+     * Aliases
+     * Justification
+ * Definitions
+   * Declares
+     * Describe this is like abstract type
+     * Describe how to assign symbols
+     * Describe how to assign connections
+   * Defines
+     * Describe this is like concrete type
+     * Describe how to assign symbols
+     * Describe how to assign connections
+     * Describe `generalizes:`
+   * States
+ * Results
+   * Axioms
+   * Conjectures
+   * Theorems
+     * Proofs
+ * Resources
+ * Specify
+   * Describe how constants are resolved
+ * People
+ * Topics
+* Type system
+   * Describe how `is` works and how types are a collection of signatures
+ * Describe how `extends` works
+ * Describe how every name must share a common ancestor type
+ * Describe how `f(x)`, `f`, and `x` are all different names
+* Resolution
+  * Describe how operators and commands are resolved
+  * Describe how names are resolved (looking in local scope, then global, and then `Specify:`)
+* Checking
+  * Guiding principles
+    * What the checks do and don't catch
+  * Rules that must be followed
+    * *todo list them all here*
