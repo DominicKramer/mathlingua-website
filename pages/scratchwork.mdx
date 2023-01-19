@@ -1,115 +1,161 @@
-# Welcome to Nextra
+# Welcome to Mathlingua
 
 * Introduction
-  * Discuss the main topics and what to expect
-* Starting example
   * Describe purpose of Mathlingua
     * Guiding principles
     * How it differs from latex and dependent type systems
     * The tradeoffs and how they are decided to address the language's purpose
       * Focus on writing results easily and catching major errors
-  * General syntax
-    * Structural indentation based
-    * Formulation command based
-    * Static and dynamic elements
-    * Distinction of meaning from visual and audible representation
-  * Describe different parts of Mathlingua and how they interact
-    * Structural vs formulation language
-    * Different types of entities
-    * Different sigils
+  * Example showing different parts of language with a brief overview
+  * Introduce Mathlore and describe the connection to it
 * mlg
   * describe the purpose of the command line tool
-  * render
+  * installing mlg
+  * project structure
+    * file type and encoding
+    * specifying page names from file names
+    * ignoring files
+      * dot files are ignored by default (in particular .git is ignored)
+  * view
+    * brief overview that points to the standalone chapter focusing just on rendering
   * check
-* Rendering
-  * Describe how `called:` and `written:` is used
-  * Describe purpose of separating description with rendering
-  * Pretty printing
-    * Describe how alpha, beta, etc. are automatically rendered as greek letters
+    * brief overview that points to the standalone chapter focusing just on checking
+    * describe how the current directory is checked by default
+    * if files are specified, then only their diagnostics are printed
+  * version
+  * help
 * Introduction to the two parts of the language
+  * Describe how the two parts work together and complement each other
+    * Structural has fewer fixed forms
+    * Formulation is customizable
+  * Structural indentation based
+    * Different types of entities
+  * Formulation command based
+    * Different sigils
+  * Static and dynamic elements
+  * Distinction of meaning from visual and audible representation
+  * Describe labels in each part of the language
+  * Textual elements
+    * Textblocks in the structural language
+    * Comments in the structural language
+    * No comments in the formulation language 
+    * Text in double quotes
+      * Explain how it is utf-8
+      * Explain how text is treated as English by default but can be prefixed
+        with `[<code>] ...` to specify the language where code is any ISO 639-1
+        language code.  Thus `"[en] This is some text"` is the default interpretation
 * Formulation language
   * Guiding principles
-* Forms and expression versions of forms
-  * Identifiers
-    * Describe that underscores can be used
-    * Describe stropping is done with ""
-    * Describe that backtick is used for quote
-  * Tuples
-    * Describe that `(x)` and `x` are equivalent and `f((x,y,z))` and `f(x, y, z)` are equivalent
-  * Fixed sets
-  * Conditional sets
-    * Describe variadic args
-  * Mappings
-    * Describe how `f(x)` means the structure in structural view and value otherwise
-    * Describe variadic args
-  * Describe how ordinal calls can be used `x{i}` and `f(x){i}`.
-  * Details
-    * Forms can be nested
-    * Forms describe structure
-* Commands
-  * Examples
-  * Usage
-  * Directed `@[]`
-  * Variadic
-  * Signatures
-    * Uses the number of form of args but not the types of args (only looking at the first level of depth)
-    * Allows for overloading in directions but whenever any part of the command is variadic, the whole this is treated as variadic and there can only be one variadic form
-  * Describe how `[]{}` and `[]{:}` is sugar for mapping and conditional set inputs
-* `:=`
-* `=`
-  * Describe that it is built-in but has no meaning
-* `:=>`
-  * Describe it is used for aliases that match the type of the input
-* Operators
-  * Order of operations
-  * General prefix, postfix, infix
-  * Enclosed
-  * `:` for resolution
-* Built in types
-  * `:statement:`, `:spec:`, `:expression:`
+  * Forms and expression versions of forms
+    * Identifiers
+      * Describe that underscores can be used
+      * Describe stropping is done with ""
+      * Describe that backtick is used for quote
+    * Tuples
+      * Describe that `(x)` and `x` are equivalent and `f((x,y,z))` and `f(x, y, z)` are equivalent
+    * Fixed sets
+    * Conditional sets
+      * Describe variadic args
+    * Mappings
+      * Describe how `f(x)` means the structure in structural view and value otherwise
+      * Describe variadic args
+    * Describe how ordinal calls can be used `x{i}` and `f(x){i}`.
+    * Details
+      * Forms can be nested
+      * Forms describe structure
+  * Commands
+    * Examples
+    * Usage
+    * Directed `@[]`
+    * Variadic
+    * Signatures
+      * Uses the number of form of args but not the types of args (only looking at the first level of depth)
+      * Allows for overloading in directions but whenever any part of the command is variadic, the whole this is treated as variadic and there can only be one variadic form
+    * Describe how `[]{}` and `[]{:}` is sugar for mapping and conditional set inputs
+  * `is`, `as`, `extends`
+    * just a brief intro
+  * `:=`
+    * Describe how identifiers can only be set once
+  * `=`
+    * Describe that it is built-in but has no meaning
+  * `:=>`
+    * Describe it is used for aliases that match the type of the input
+  * Operators
+    * Order of operations
+    * General prefix, postfix, infix
+    * Enclosed
+    * `:` for resolution
+  * Built in types
+    * `:statement:`, `:spec:`, `:expression:`
+  * Specs vs clauses
 * Structural language
   * Guiding principles
     * Structural language is fixed and formulation language is fluid
-    * where vs suchThat
-    * Flow based typing
- * Common aspects
-   * `[ids]`
-     * MetaIds
-     * Documented
-     * References
-     * Aliases
-     * Justification
- * Definitions
-   * Declares
-     * Describe this is like abstract type
-     * Describe how to assign symbols
-     * Describe how to assign connections
-   * Defines
-     * Describe this is like concrete type
-     * Describe how to assign symbols
-     * Describe how to assign connections
-     * Describe `generalizes:`
-   * States
- * Results
-   * Axioms
-   * Conjectures
-   * Theorems
-     * Proofs
- * Resources
- * Specify
-   * Describe how constants are resolved
- * People
- * Topics
+    * Indentation based with dot space for arguments
+  * Building blocks:
+    * anyOf:
+    * allOf:
+    * oneOf:
+    * not:
+    * if:then:
+    * iff:then:
+    * exists:
+    * existsUnique:
+    * forAll:
+    * piecewise:
+    * when:then:
+    * given:
+  * Common aspects
+    * `[ids]`
+      * MetaIds
+      * Documented
+        * describe each item
+      * References
+        * brief overview with reference to the References section
+      * Aliases
+      * Justification
+  * Definitions
+    * Declares
+      * Describe this is like abstract type
+      * Describe how to assign symbols
+      * Describe how to assign connections
+    * Defines
+      * Describe this is like concrete type
+      * Describe how to assign symbols
+      * Describe how to assign connections
+      * Describe `generalizes:`
+    * States
+  * Results
+    * Axioms
+    * Conjectures
+    * Theorems
+      * Proofs
+  * Resources
+  * Specify
+    * Describe how constants are resolved
+  * People
+  * Topics
+* Rendering
+  * Describe how functions, tuples, etc. are rendered
+  * Describe how `called:`, `written:`, and `writing:` are used
+  * Describe purpose of separating description with rendering
+  * Pretty printing
+    * Describe how alpha, beta, etc. are automatically rendered as greek letters
+    * Describe how `a_1` and `a1` are valid identifiers and they are rendered the same
 * Type system
-   * Describe how `is` works and how types are a collection of signatures
- * Describe how `extends` works
- * Describe how every name must share a common ancestor type
- * Describe how `f(x)`, `f`, and `x` are all different names
+  * Flow based typing with something similar to intersection types
+  * Describe how `is` works and how types are a collection of signatures
+  * Describe how `extends` works
+  * Describe how every name must share a common ancestor type
+  * Describe how `f(x)`, `f`, and `x` are all different names
 * Resolution
   * Describe how operators and commands are resolved
   * Describe how names are resolved (looking in local scope, then global, and then `Specify:`)
 * Checking
   * Guiding principles
-    * What the checks do and don't catch
-  * Rules that must be followed
+    * Describe the cost/benefit tradeoff justifying why the checker is design the way it is
+  * Items that are checked
     * *todo list them all here*
+  * Items that are not checked
+* Specification
+* Glossary
