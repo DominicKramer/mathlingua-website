@@ -1,6 +1,6 @@
 # Welcome to Mathlingua
 
-* Introduction
+* [chapter] Introduction
   * Describe purpose of Mathlingua
     * Guiding principles
     * How it differs from latex and dependent type systems
@@ -8,7 +8,7 @@
       * Focus on writing results easily and catching major errors
   * Example showing different parts of language with a brief overview
   * Introduce Mathlore and describe the connection to it
-* mlg
+* [chapter] mlg
   * describe the purpose of the command line tool
   * installing mlg
   * project structure
@@ -24,7 +24,7 @@
     * if files are specified, then only their diagnostics are printed
   * version
   * help
-* Introduction to the two parts of the language
+* [chapter] Introduction to the two parts of the language
   * Describe how the two parts work together and complement each other
     * Structural has fewer fixed forms
     * Formulation is customizable
@@ -44,7 +44,7 @@
       * Explain how text is treated as English by default but can be prefixed
         with `[<code>] ...` to specify the language where code is any ISO 639-1
         language code.  Thus `"[en] This is some text"` is the default interpretation
-* Formulation language
+* [chapter] Formulation language
   * Guiding principles
   * Forms and expression versions of forms
     * Identifiers
@@ -88,7 +88,7 @@
   * Built in types
     * `:statement:`, `:spec:`, `:expression:`
   * Specs vs clauses
-* Structural language
+* [chapter] Structural language
   * Guiding principles
     * Structural language is fixed and formulation language is fluid
     * Indentation based with dot space for arguments
@@ -135,27 +135,28 @@
     * Describe how constants are resolved
   * People
   * Topics
-* Rendering
+* [chapter] Rendering
   * Describe how functions, tuples, etc. are rendered
   * Describe how `called:`, `written:`, and `writing:` are used
   * Describe purpose of separating description with rendering
   * Pretty printing
     * Describe how alpha, beta, etc. are automatically rendered as greek letters
     * Describe how `a_1` and `a1` are valid identifiers and they are rendered the same
-* Type system
+* [chapter] Type system
   * Flow based typing with something similar to intersection types
   * Describe how `is` works and how types are a collection of signatures
   * Describe how `extends` works
   * Describe how every name must share a common ancestor type
   * Describe how `f(x)`, `f`, and `x` are all different names
-* Resolution
+* [chapter] Resolution
   * Describe how operators and commands are resolved
   * Describe how names are resolved (looking in local scope, then global, and then `Specify:`)
-* Checking
+* [chapter] Checking
   * Guiding principles
     * Describe the cost/benefit tradeoff justifying why the checker is design the way it is
   * Items that are checked
     * *todo list them all here*
   * Items that are not checked
-* Specification
-* Glossary
+* [chapter] Specification
+* [chapter] Project Timeline
+* [chapter] Glossary
