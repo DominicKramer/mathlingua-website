@@ -12,6 +12,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Mathlore: mathlore.md
-  - Prototype: prototype/index.html
+  - The Prototype: prototype/index.html
+  - About the Author: author.md
+  - Source Code: source.md
