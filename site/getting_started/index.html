@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../prototype/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../source/">
+        <link rel="next" href="../overview/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>About the Author - Mathlingua</title>
+        <title>Getting Started - Mathlingua</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-the-author" class="md-skip">
+        <a href="#getting-started" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About the Author
+              Getting Started
             
           </span>
         </div>
@@ -225,11 +225,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../getting_started/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting Started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-mathlingua-tooling-manually" class="md-nav__link">
+    Using the Mathlingua Tooling Manually
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -285,21 +326,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../author/" class="md-nav__link">
         About the Author
       </a>
-      
     </li>
   
 
@@ -354,6 +385,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-mathlingua-tooling-manually" class="md-nav__link">
+    Using the Mathlingua Tooling Manually
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -367,11 +413,21 @@
                   
 
 
-<h1 id="about-the-author">About the Author</h1>
-<p>Mathlingua is designed and implemented by Dominic Kramer.</p>
-<p>Dominic has a PhD in mathematics from Iowa State University, has over ten years of extensive software design and engineering experience in top companies such as Google, Databricks, and Boeing, and has spent much time, both professionally and personally, working in the area of computer and natural language design and implementation.</p>
-<p>Dominic's interests focus on the intersection of mathematics and languages and includes all aspects of language design and usage ranging from traditional parser design and lambda calculus (ranging from simple to dependent type theory), all of the way to deep learning and large language models.</p>
-<p>Dominic is particularly interested in how the design of a language's syntax and semantics shapes how concepts or applications can or cannot be easily expressed or implemented in that language.</p>
+<h1 id="getting-started">Getting Started</h1>
+<p>To get started first <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">fork</a> the <a href="https://github.com/mathlingua/mathlore-content">repository</a> that contains the Mathlore content.  This is the community's collection of mathematical content written in the Mathlingua language.</p>
+<p>Next, download the latest release of the Mathlingua command line tool from the <a href="https://github.com/mathlingua/mathlingua/releases">releases page</a>, rename it to <code>mlg</code>, and ensure it is in your <code>PATH</code>.</p>
+<p>Last, you can use whatever editor you like to edit Mathlingua code.  However, if you use <a href="https://code.visualstudio.com/">Visual Studio Code</a> you can <a href="https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension">install</a> the <a href="https://marketplace.visualstudio.com/items?itemName=dominickramer.mathlingua-language-support">Mathlingua Language Support</a> extension that provides syntax highlighting, autocompletion, and error diagnostics provided by <code>mlg</code>.</p>
+<blockquote>
+<p>Mathlingua files have the <code>.math</code> extension and the <code>mathlingua-language-support</code> extension is designed to analyze any files with the <code>.math</code> extension.</p>
+</blockquote>
+<h2 id="using-the-mathlingua-tooling-manually">Using the Mathlingua Tooling Manually</h2>
+<p>The <code>mlg</code> tool uses the format <code>mlg &lt;command&gt;</code> where <code>&lt;command&gt;</code> is an action to perform:</p>
+<ul>
+<li><code>mlg check</code>:  Analyzes all <code>.math</code> files in the current working directory recursively for any errors and prints them to the screen.  Optionally, if directory or <code>.math</code> file name(s) are specified, only errors for those files are printed to the screen.</li>
+<li><code>mlg view</code>: Serves the current directory's Mathlingua files at <code>http://localhost:8080</code> so that they can be viewed.</li>
+<li><code>mlg version</code>: Prints the Mathlingua version.</li>
+<li><code>mlg help</code>: Prints information about how to use <code>mlg</code>.</li>
+</ul>
 
 
 
