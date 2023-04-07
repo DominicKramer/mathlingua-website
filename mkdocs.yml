@@ -3,7 +3,7 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: cyan
+      primary: blue
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -30,8 +30,10 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - Introduction: index.md
+  - Getting Started: getting_started.md
   - Overview: overview.md
   - Mathlore: mathlore.md
   - The Prototype: prototype/index.html
   - About the Author: author.md
   - Source Code: source.md
+  - Contact: contact.md
