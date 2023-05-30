@@ -125,8 +125,6 @@ The Mathlingua language is designed to create [Mathlore](./mathlore.md), a knowl
 * no definition is used incorrectly (i.e. the inputs to any definition used are of the correct count and type)
 * no statement is ambiguous (i.e. text such as $a * b$ where the meaning of $*$ cannot be determined is not allowed)
 
-> Note: Mathlore is still under development and has not been released yet.
+## In progess
 
-# In progess
-
-This document and Mathlingua is still progress.  Check back often for the addition of information including, but not limited to, why Mathlingua is needed when LaTeX, MathML, etc. (as well as theorem provers like Lean, Coq, etc.) already exist, how does Mathlingua improve the mathematics ecosystem, how does Mathlingua relate to Large Language Models, and much more.
+This document and Mathlingua are still progress.  Check back often for the addition of information including, but not limited to, why Mathlingua is needed when LaTeX, MathML, etc. (as well as theorem provers like Lean, Coq, etc.) already exist, how does Mathlingua improve the mathematics ecosystem, how does Mathlingua relate to Large Language Models, and much more.
