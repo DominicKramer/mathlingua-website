@@ -1,6 +1,6 @@
 # Overview
 
-> This document is very much a work in progress whose purpose is to describe the *Mathlingua* language, a language to precisely and concisely describe mathematical knowledge in a declarative format that is easy for people and computers to read and write.  Its goal is to make it fun and easy to record, communiate, and discover mathematics.
+> This document is a work in progress whose purpose is to describe the *Mathlingua* language, a language to precisely and concisely describe mathematical knowledge in a declarative format that is easy for people and computers to read and write.  Its goal is to make it fun and easy to record, communiate, and discover mathematics.
 
 Today there is so much mathematical knowledge in existence in the form of definitions, axioms, theorems, and conjectures, that it can be hard to know or discover what is known and what is unknown.
 
